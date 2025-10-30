@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>양식을 만들고 값 전송하기</title>
+    </head>
+    <body>
+        <form action="none.com" method="post">
+
+            <label for="name">이름</label>
+            <input for="name" type="taxt" name="name">
+            <br>
+            <label for="age">나이</label>
+            <input for="age" type="number" name="age">
+            <br>
+            <label for="character">성격</label>
+            <textarea id="character" name="character"></textarea>
+            <br>
+            <input type="submit">
+            <!--각각의 네임태그로 한번씩더 구분지어주면
+            서버에서 처리하기가 수월해진다-->
+        </form>
+    </body>
+
+</html>

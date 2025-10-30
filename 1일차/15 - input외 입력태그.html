@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>input외 입력태그</title>
+    </head>
+    <body>
+        <!--필드셋 지금은 잘 안쓰이지만 알아두면 좋음-->
+         <fieldset>
+         <legend>음료주문</legend>
+         <h2>음료를 고르세요</h2>
+         <select>
+            <option value="sol">솔의눈</option>
+            <option value="dejawa">데자와</option>
+            <option value="maccol" selected>맥콜</option>
+            <option value="zico">지코</option>
+            <!--지금은 상관없지만 나중에
+            자바스크립트나 css를 적용했을때
+            코드적인 처리가 가능하다-->
+            <!--셀렉티드 태그 입력시 순서상관없이
+            제일 처음에 노출된다 -->
+            <!--셀렉 속성에 멀티플 태그 입력시
+            컨트롤을 누르면서 클릭시 여러개
+            선택가능 사이즈 태그시 몇개씩
+            보이게 할것인지도 설정가능-->
+
+        </select>
+
+    
+            
+            <h2>기타 음료를 원한다면 자유롭게 적어주세요</h2>
+            <textarea cols="30" rows="10"></textarea>
+            </fieldset>
+            <h2>우리의 준비 상태는 아래와 같습니다</h2>
+            <progress max="100" value="80"></progress>
+
+            <h2>추가 용무가 있으면 호출해주세요</h2>
+            <button>호출</button>
+            <input type="button" value="호출">
+    </body>
+
+</html>
