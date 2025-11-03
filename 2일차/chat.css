@@ -1,0 +1,113 @@
+/* 기본 세팅 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard', sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 전체 컨테이너 */
+.container {
+  width: 400px;
+  height: 600px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* 상단 바 (유저 정보 표시) */
+.chat-screen_bar {
+  background-color: #0078ff;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user_pic {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user_nick {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.user_count {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* 채팅 내용 영역 */
+.chat-screen {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #e9ebee;
+}
+
+/* 입력 폼 영역 */
+.chat-form {
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.chat-form_field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-form_msg {
+  flex: 1;
+  height: 50px;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.chat-form_msg:focus {
+  border-color: #0078ff;
+}
+
+/* 전송 버튼 */
+.chat-form_bt {
+  background-color: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.chat-form_bt:hover {
+  background-color: #005ec4;
+}
+

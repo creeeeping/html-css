@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, 
+  initial-scale=1.0">
+  <title>사용자 정보 입력하기</title>
+  <style>
+    body { font-family: 'Pretendard', sans-serif; text-align: center; margin-top: 50px; }
+    .info-box {
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h2>👤 사용자 정보</h2>
+  <div class="info-box" id="userInfo">아직 정보가 없습니다.</div>
+
+  <script>
+    // [1] 사용자에게 정보 입력받기
+    const name = prompt("이름을 입력해주세요:");
+    const age = prompt("나이를 입력해주세요:");
+    const color = prompt("좋아하는 색깔을 입력해주세요:");
+
+    // [2] 콘솔 출력 (자료형 확인)
+    console.log(`이름: ${name}, 나이: ${age}, 색깔: ${color}`);
+    console.log("자료형:", typeof name, typeof age, typeof color);
+
+    // [3] DOM 조작 - 화면에 표시
+    const userInfo = document.querySelector("#userInfo");
+    userInfo.innerHTML = `
+      <p>이름: <strong>${name}</strong></p>
+      <p>나이: <strong>${age}</strong></p>
+      <p>좋아하는 색: <strong style="color:${color}">${color}</strong></p>
+    `;
+  </script>
+</body>
+</html>
