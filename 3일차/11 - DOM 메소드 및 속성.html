@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>DOM 메소드 및 속성</title>
+</head>
+<body>
+
+    <h1 id="song-title" class="heading"
+    title="에픽하이 4집 수록곡">
+        <span>Nocturne</span>
+    </h1>
+    <p class="lirics">
+        하늘이 지켜줄거란 착각은 주의할점 인간의 채찍질에 찢겨지는 주의 살점
+    </p>
+    <p class="lirics">
+        도망쳐 봤자 신은 죽었으니 미지뿐 널 죽인 죄의 목격자 고장난 cctv뿐
+    </p>
+    <script>
+        console.log(document.querySelectorAll('.lirics'))
+        
+        
+        console.log(
+        document.getElementsByClassName("lyrics")
+    )
+    
+    const title = document.getElementById("song-title")
+    console.log(title)
+    console.log(title.textContent)
+    // 텍스트 콘텐츠의 경우는 코드상에 공백도 포함한다.
+    console.log(title.innerText)
+    console.log(title.className)
+    console.log(title.style)
+    // 정의된 스타일값이 나오지만 지금은 해놓은것이 없으므로 항목별로 뜬다.
+    console.log(title.title)
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, 
+  initial-scale=1.0">
+  <title>DOM 연습</title>
+</head>
+<body>
+  <p>뜌</p>
+  <p class="comment">어</p>
+  <p class="comment" id="tears">ㅠ</p>
+
+  <script>
+    const p1 = document.querySelector("p");
+    const p2 = document.querySelector(".comment");
+    const p3 = document.querySelector("#tears");
+
+    console.log(p1.textContent);
+    console.log(p2.textContent);
+    console.log(p3.textContent);
+
+    p1.textContent = "가";
+    p2.textContent = "나";
+    p3.textContent = "ㅠ";
+  </script>
+</body>
+</html>

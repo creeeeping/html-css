@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>createElement & appendChild</title>
+</head>
+<body>
+
+    <div id="container">
+
+
+    </div>
+    <script>
+        for(let a = 1; a<= 5; a+= 1){
+        const div = document.getElementById("container")
+        const box = document.createElement("div")
+        console.log(box)
+        box.style.color = "blue"
+        box.style.width = "200px"
+        box.style.height = "200px"
+        box.textContent = "개어렵다 ㅠㅠㅠ"
+        div.appendChild(box)
+        }
+        // for문 도 가능 
+        // append 를 써도 똑같지만 단순 텍스트만 추가가 가능하고 console에 반환은 되지 않는다
+    </script>
+</body>
+</html>
